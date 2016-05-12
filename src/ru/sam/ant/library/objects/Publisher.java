@@ -1,7 +1,22 @@
 package ru.sam.ant.library.objects;
 
-/**
- * Created by user on 12.05.2016.
- */
-public class Publisher {
+import java.io.Serializable;
+
+public class Publisher implements Serializable {
+    private String name;
+
+    public Publisher() {
+    }
+
+    public Publisher(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

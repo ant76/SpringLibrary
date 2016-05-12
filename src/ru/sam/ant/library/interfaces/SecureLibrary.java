@@ -1,7 +1,8 @@
 package ru.sam.ant.library.interfaces;
 
-/**
- * Created by user on 12.05.2016.
- */
+import ru.sam.ant.library.objects.User;
+
 public interface SecureLibrary {
+    boolean login(User user);
+    boolean logout(User user);
 }

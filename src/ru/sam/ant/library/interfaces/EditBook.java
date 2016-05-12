@@ -1,7 +1,11 @@
 package ru.sam.ant.library.interfaces;
 
-/**
- * Created by user on 12.05.2016.
- */
+import ru.sam.ant.library.objects.Book;
+
 public interface EditBook {
+
+    boolean save(Book book);
+    boolean delete(Book book);
+    boolean edit(Book book);
+    boolean add(Book book);
 }

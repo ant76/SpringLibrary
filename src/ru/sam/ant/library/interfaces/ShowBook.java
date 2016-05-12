@@ -1,7 +1,9 @@
 package ru.sam.ant.library.interfaces;
 
-/**
- * Created by user on 12.05.2016.
- */
+import ru.sam.ant.library.objects.Book;
+
 public interface ShowBook {
+    void showBook(Book book);
+    void downloadBook(Book book);
+    void voteBook(Book book);
 }
